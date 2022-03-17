@@ -1,0 +1,36 @@
+<div [formGroup]="formSignup" class="panel-align">
+    <h4>Password Guide and Validation</h4>
+    <div class="top-space">&nbsp;</div>
+    <div class="form-group">
+        <label for="userName" [class.text-danger]="(formSignup.controls.userName.dirty || formSignup.controls.userName.touched) && formSignup.controls.userName.invalid">Username</label>
+        <input id="userName" formControlName="userName" type="text" maxlength="50"
+               class="form-control" [class.is-invalid]="(formSignup.controls.userName.dirty || formSignup.controls.userName.touched) && formSignup.controls.userName.invalid">
+        <validate-error [control]="formSignup.controls.userName"></validate-error>
+    </div>
+    <div class="form-group">
+        <label for="password" [class.text-danger]="(formSignup.controls.password.dirty || formSignup.controls.password.touched) && formSignup.controls.password.invalid">Password:</label>
+        <input id="password" formControlName="password" type="password" class="form-control" #passwordElem
+               [class.is-invalid]="(formSignup.controls.password.dirty || formSignup.controls.password.touched) && formSignup.controls.password.invalid"
+               (focus)="setControlOnFocusBlur(true)"
+               (blur)="setControlOnFocusBlur(false)">
+        <password-guide [control]="formSignup.controls.password" [itemList]="passwordItemList"
+                        [passwordGuideTrigger]="passwordGuideTrigger" >
+        </password-guide>
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword" [class.text-danger]="((formSignup.controls.confirmPassword.touched && !formSignup.controls.confirmPassword.value) ||
+                                formSignup.controls.confirmPassword.dirty) && formSignup.controls.confirmPassword.invalid ">
+            Confirm Password:
+        </label>
+        <input id="confirmPassword" formControlName="confirmPassword" type="password" class="form-control"
+               [class.is-invalid]="((formSignup.controls.confirmPassword.touched && !formSignup.controls.confirmPassword.value) ||
+                                formSignup.controls.confirmPassword.dirty) && formSignup.controls.confirmPassword.invalid ">
+        <validate-error [control]="formSignup.controls.confirmPassword"></validate-error>    
+    </div>
+    <div class="form-group top-space-2">
+        <button [disabled]="formSignup.invalid" type="button" class="btn btn-primary font-weight-bold" (click)="submit()">
+            &nbsp;&nbsp;Sign up&nbsp;&nbsp;
+        </button>
+    </div>
+    <div class="top-space-2">&nbsp;</div>
+</div>
