@@ -1,0 +1,11 @@
+{
+  "name": "ngex-password-guide",
+  "version": "12.1.1",
+  "peerDependencies": {
+    "@angular/common": "12.2.1",
+    "@angular/core": "12.2.1"
+  },
+  "dependencies": {
+    "tslib": "2.2.0"
+  }
+}
