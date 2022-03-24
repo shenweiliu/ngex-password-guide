@@ -71,7 +71,7 @@ The physical copy of the base code files is recommended if you need to add new i
 
   <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/password-not-match.png" alt="Password not match" >
   
--  After clicking the "Sign up" button, the server-side validation renders the common password error. Placing the mouse on the icon shows the tooltip.
+- After clicking the "Sign up" button, the delayed server-side validation renders the common password error. Placing the mouse on the icon shows the tooltip.
   
-  <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/common-password.png" alt="Common password" >
+   <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/common-password.png" alt="Common password" >
  
