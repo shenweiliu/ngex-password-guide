@@ -61,9 +61,17 @@ The physical copy of the base code files is recommended if you need to add new i
 
 - When focused on the Password input field, the guidelines are shown in the default status (no color and icons) except for the "Password Required":
 
-<img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/password-first-focus.png" alt="Alt text" title=""> 
+  <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/password-first-focus.png" alt="First focused" > 
 
 - During entering the password, guildlines dynamically show the status with some valid and others invalid inputs:
 
-![image] (tree/main/screenshots/some-invalid.png?raw=true)
+  <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/some-invalid.png" alt="Some invalid" >
+
+- The password is valid at the time of entry. The value of Confirm Password field is not match.
+
+  <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/password-not-match.png" alt="Password not match" >
+  
+-  After clicking the "Sign up" button, the server-side validation renders the common password error. Placing the mouse on the icon shows the tooltip.
+  
+  <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/common-password.png" alt="Common password" >
  
