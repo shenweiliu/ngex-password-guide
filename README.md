@@ -61,7 +61,7 @@ The physical copy of the base code files is recommended if you need to add new i
 
 - When focused on the Password input field, the guidelines are shown in the default status (no color and icons) except for the "Password Required":
 
-<img src="https://github.com/shenweiliu/ngex-password-guide/tree/main/screenshots/password-first-focus.png" alt="Alt text" title=""> 
+<img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/password-first-focus.png" alt="Alt text" title=""> 
 
 - During entering the password, guildlines dynamically show the status with some valid and others invalid inputs:
 
