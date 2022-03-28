@@ -75,3 +75,6 @@ The physical copy of the base code files is recommended if you need to add new i
   
    <img src="https://github.com/shenweiliu/ngex-password-guide/blob/main/screenshots/common-password.png" alt="Common password" >
  
+## Run Demo on stackblitz.com 
+
+The [demo sample application](https://angular-ivy-kpsmzd.stackblitz.io) is on the stackblitz.com. You can run password entry test cases to see `ngex-password-guide` and validations in action. 
